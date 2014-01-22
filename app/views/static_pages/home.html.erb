@@ -7,8 +7,6 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <title>Woah</title>
-
     <!-- Bootstrap core CSS -->
 	<%= stylesheet_link_tag "bootstrap" %>
     <!-- Custom styles for this template -->
@@ -37,12 +35,10 @@
 			<i class="icon-remove menu-close"></i>
 			<a href="#home" class="smoothScroll">Home</a>
 			<a href="#about" class="smoothScroll">About</a>
-			<a href="#portfolio" class="smoothScroll">Portfolio</a>
+			<a href="#projects" class="smoothScroll">Projects</a>
 			<a href="#contact" class="smoothScroll">Contact</a>
-			<a href="#"><i class="icon-facebook"></i></a>
-			<a href="#"><i class="icon-twitter"></i></a>
-			<a href="#"><i class="icon-dribbble"></i></a>
-			<a href="#"><i class="icon-envelope"></i></a>
+			<a href="http://twitter.com/astuyve"><i class="icon-twitter"></i></a>
+			<a href="mailto:astuyve@gmail.com"><i class="icon-envelope"></i></a>
 		</div>
 		
 		<!-- Menu button -->
@@ -63,8 +59,6 @@
 				<h1>FUCKING MOUNTAINS</h1>
 				<br>
 				<h3>RIGHT GODDAMN HERE</h3>
-				<br>
-				<br>
 				<div class="col-lg-6 col-lg-offset-3">
 				</div>
 			</div>
@@ -78,20 +72,24 @@
 	<div id="f">
 		<div class="container">
 			<div class="row">
+				<%= image_tag 'me.png', :id=>'img-me' %>
 				<h3>ABOUT ME</h3>
 				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
-				
-				<!-- INTRO INFORMATIO-->
 				<div class="col-lg-6 col-lg-offset-3">
-					<p>Keyboard presser for hire</p>
-				</div>								
+					<p>Minneapolis/Saint Paul software developer.</p>
+					<p>I build things on the internet with Ruby on Rails, Python and Flask. I know a bit of Javascript, and a bit of CSS.</p>
+					<p>I also have a penchant for Linux systems, from init scripts to databases to webservers and networking.</p>
+					<br>
+					<p>I like skydiving, climbing, hiking and backpacking.</p>
+					<p>I'm currently a Software Engineer in the R&D Group at St. Jude Medical.</p>
+				</div>
 			</div>
 		</div><!-- /container -->
 	</div><!-- /f -->
 	
 
 	<!-- ========== CAROUSEL SECTION ========== -->	
-	<section id="portfolio" name="portfolio"></section>
+	<section id="projects" name="projects"></section>
 	<div id="f">
 		<div class="container">
 			<div class="row centered">

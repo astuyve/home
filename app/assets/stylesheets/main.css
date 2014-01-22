@@ -310,4 +310,8 @@ a:after {
 			transition: all .1s ease-in-out;
 }
 
-
+#img-me {
+	max-width: 30%;
+	height: auto;
+	width: auto\9; /* IE 9... */
+}
