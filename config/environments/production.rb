@@ -37,7 +37,7 @@ Home::Application.configure do
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
-  # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
+  config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
@@ -76,7 +76,7 @@ Home::Application.configure do
   # config.autoflush_log = false
 
   config.assets.precompile << Proc.new { |path|
-  	if path=~ /\.(eot|svg|ttf|woff)\z/
+  	if path=~ /\.(eot|svg|ttf|woff|js|css|css.erb)\z/
 		true
 	end
   }

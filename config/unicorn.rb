@@ -32,13 +32,13 @@ listen 8080, :tcp_nopush => true
 timeout 30
 
 # feel free to point this anywhere accessible on the filesystem
-pid "/var/www/user_agent/tmp/pids/unicorn.pid"
+pid "/var/www/home/tmp/pids/unicorn.pid"
 
 # By default, the Unicorn logger will write to stderr.
 # Additionally, ome applications/frameworks log to stderr or stdout,
 # so prevent them from going to /dev/null when daemonized here:
-stderr_path "/var/www/user_agent/log/unicorn.stderr.log"
-stdout_path "/var/www/user_agent/log/unicorn.stdout.log"
+stderr_path "/var/www/home/log/unicorn.stderr.log"
+stdout_path "/var/www/home/log/unicorn.stdout.log"
 
 # combine Ruby 2.0.0dev or REE with "preload_app true" for memory savings
 # http://rubyenterpriseedition.com/faq.html#adapt_apps_for_cow
