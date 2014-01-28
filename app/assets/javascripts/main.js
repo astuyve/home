@@ -13,7 +13,7 @@ $((function(){
 $(document).ready(function() {
 	$("#carousel").owlCarousel({
 		autoPlay: 3000,
-
-		items : 1,
+		
+		singleItem : true
 	});
 });
