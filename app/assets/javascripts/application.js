@@ -16,4 +16,5 @@
 //= require classie
 //= require bootstrap.min
 //= require smoothscroll
+//= require owl.carousel.min
 //= require main
